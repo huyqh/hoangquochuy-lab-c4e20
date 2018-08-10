@@ -13,9 +13,9 @@ all_customer = customers.find()
 
 references = {"Advertisements" : 0, "Events" : 0, "Word of mouth" : 0}
 for customer in all_customer:
-    if customer["ref"] == "Events":
+    if customer["ref"] == "event":
         references["Events"] += 1
-    elif customer["ref"] == "Advertisements":
+    elif customer["ref"] == "Ads":
         references["Advertisements"] += 1
     else:
         references["Word of mouth"] += 1
